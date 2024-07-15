@@ -1,5 +1,5 @@
 // Create an array named products which you will use to add all of your product object literals that you create in the next step. */
-const products = [
+let products = [
 {
      // Create 3 or more product objects using object literal notation 
      // Each product should include five properties
@@ -35,7 +35,7 @@ const products = [
 
 
 /* Declare an empty array named cart to hold the items in the cart */
-const cart = [];
+let cart = [];
 
 
 // Create a function named addProductToCart that takes in the product productId as an argument
@@ -43,11 +43,19 @@ function addProductToCart(productID)
 {
 //- addProductToCart should get the correct product based on the productId
 //- if the product is not already in the cart, add it to the cart
-let correctProduct = 0;
+     let correctProduct = 0;
 // one of these is correct
-products.forEach (product in products)
-{
-     if (product.productID === productID);
+     products.forEach (product in products)
+     {  
+          if (cart.includes(product.productID))
+          {
+
+          }
+          if (product.productID === productID);
+          {
+               product.productID++;
+          }
+     cart.push(productID)
 }
 // or
 // for (n=0; n<products.length; n++)
